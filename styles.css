@@ -1,0 +1,448 @@
+/* Navigation Bar Styling */
+nav {
+  position: fixed; /* Fixes the nav bar at the top */
+  top: 0; /* Aligns it to the top of the page */
+  left: 0; /* Aligns it to the left edge */
+  width: 100%; /* Stretches the nav bar across the page */
+  background: #0077cc; /* Matches the professional blue */
+  color: #fff; /* White text for contrast */
+  padding: 15px 30px; /* Adds padding for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensures it stays above other elements */
+  display: flex; /* Flexbox for layout */
+  justify-content: space-between; /* Aligns logo and links */
+  align-items: center; /* Centers items vertically */
+  font-family: Arial, sans-serif; /* Sets a clean font */
+}
+
+nav .nav-div {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Styling */
+.nav-div .logo {
+  font-size: 1.8rem; /* Larger font for the logo */
+  font-weight: bold;
+  color: #fff; /* White text */
+  text-decoration: none; /* Removes underline */; /* Smooth hover effect */
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+}
+
+.nav-div .logo:hover {
+  color: #f4f4f9; /* Slightly lighter color on hover */
+}
+
+/* Navigation Links Styling */
+nav ul {
+  list-style: none; /* Removes bullet points */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Aligns items horizontally */
+  gap: 25px; /* Adds spacing between links */
+}
+
+nav ul li {
+  display: inline-block; /* Keeps items inline and allows them to behave as blocks */
+}
+
+nav ul li a {
+  color: #fff; /* White text */
+  text-decoration: none; /* Removes underline */
+  font-size: 1.2rem; /* Standard font size */
+  padding: 8px 20px; /* Adds padding around the links */
+  border-radius: 5px; /* Rounded corners for a cleaner look */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  color: #0077cc; /* Changes text color on hover */
+  background-color: #f4f4f9; /* Adds a background color on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stacks logo and links vertically */
+    align-items: flex-start; /* Aligns items to the left */
+    padding: 20px 15px; /* Adjusts padding for smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stacks navigation links vertically */
+    gap: 15px; /* Reduces the gap between links */
+  }
+
+  nav ul li a {
+    padding: 10px 25px; /* Increases padding for better touch targets */
+    font-size: 1.4rem; /* Increases font size for readability */
+  }
+}
+
+
+
+/* Adjust Body for Fixed Nav */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f4f4f9; /* Light background for contrast */
+  color: #333; /* Neutral text color */
+}
+
+main {
+  margin-top: 80px; /* Prevents content from overlapping the nav bar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: calc(100vh - 80px); /* Ensures main content fills the page */
+}
+
+/* Container Styling */
+.text {
+  background: #ffffff; /* White card background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 20px;
+  max-width: 600px; /* Limits the width */
+  text-align: center;
+  width: 100%; /* Ensures responsiveness */
+}
+
+h1 {
+  font-size: 2rem; /* Large and bold */
+  margin-bottom: 15px;
+  color: #0077cc; /* Professional blue */
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+/* Header Styling */
+.text h1 {
+  font-size: 2rem; /* Large and bold */
+  margin-bottom: 15px;
+  color: #0077cc; /* Professional blue */
+}
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers image and caption horizontally */
+  text-align: center;
+  margin-top: 50px; /* Moves the entire figure down */
+}
+
+
+
+/* Profile Image Styling */
+.profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Makes the image circular */
+  border: 10px solid #0077cc; /* Blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer; /* Clickable indicator */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.profile img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Caption Styling */
+.profile figcaption {
+  margin-top: 20px; /* Adjust vertical positioning */
+  font-size: 1.2rem;
+  line-height: 1.6; /* Improves readability */
+  color: #555; /* Slightly muted text color */
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+
+/* Paragraph Styling */
+.text .description {
+  font-size: 1rem; /* Comfortable reading size */
+  line-height: 1.6; /* Improves readability */
+  margin-top: 15px;
+  color: #555; /* Slightly muted text color */
+}
+
+/* Footer Styling */
+footer {
+  background: #0077cc; /* Matches the nav bar */
+  color: #fff; /* White text */
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%; /* Stretches across the page */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+/* Article Styling */
+article {
+  max-width: 800px; /* Restricts width for better readability */
+  margin: 50px auto; /* Centers the article on the page */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for contrast */
+  border-radius: 10px; /* Soft rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Description Paragraph */
+article .description {
+  font-size: 1.3rem; /* Larger text for the intro */
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* General Paragraph Styling */
+article p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* List Styling */
+article ul {
+  list-style: none; /* Removes default bullet points */
+  padding: 0;
+}
+
+article ul li {
+  font-size: 1.1rem;
+  padding: 15px;
+  margin: 10px 0;
+  background: #fff;
+  border-left: 5px solid #0077cc; /* Adds a left border for emphasis */
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Bold Titles in List */
+article ul li strong {
+  color: #0077cc; /* Matches the border */
+  font-size: 1.2rem;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+    gap: 10px; /* Adjust spacing for smaller screens */
+  }
+
+  .text {
+    padding: 15px;
+  }
+
+  .profile img {
+    width: 120px; /* Smaller image for smaller screens */
+    height: 120px;
+  }
+
+  .text h1 {
+    font-size: 1.5rem; /* Smaller header size */
+  }
+}
+
+/* General Content Styling */
+.content {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Headers */
+.content h1, 
+.content h2 {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 20px;
+}
+
+.content h3, 
+.content h4 {
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Resume Container */
+.resume-container,
+.vision-mission-container,
+.career-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Paragraph Styling */
+.content p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* List Styling */
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content ul li {
+  font-size: 1.1rem;
+  padding: 10px;
+  margin: 8px 0;
+  background: #fff;
+  border-left: 5px solid #0077cc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+.content a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* Additional Styling for Career Section */
+.career-container h4 {
+  color: #0077cc;
+  font-size: 1.2rem;
+}
+
+.intro {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Sections */
+.intro, .projects, .contact {
+    padding: 15px;
+    margin-bottom: 20px;
+    background: #ecf0f1;
+    border-left: 5px solid #3498db;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2980b9;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#personality-image {
+  width: 150px;  /* Initial size */
+  height: 150px; /* Ensures it's square */
+  object-fit: cover; /* Prevents distortion */
+  border-radius: 10px; /* Slightly rounded corners */
+  margin: 0 auto; /* Centers image */
+  display: block; /* Ensures proper centering */
+  border: 3px solid #0077cc; /* Blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  cursor: pointer; /* Clickable effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover */
+}
+
+#personality-image:hover {
+  transform: scale(2); /* Pops up 2x its original size */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+}

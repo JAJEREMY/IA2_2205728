@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeremy Grant - Reference Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <h1>Reference Page</h1>
+
+<h2>Books</h2>
+<ul>
+  <li>Rohn, J., & Ringer, C. (2005). *Twelve Pillars*. Jim Rohn International.</li>
+  <li>McDowell, M. (2019). *Python Crash Course (2nd Edition)*. No Starch Press.</li>
+</ul>
+
+<h2>Websites</h2>
+<ul>
+  <li>Keirsey, D. (2024). *Keirsey Temperament Sorter* [Online personality test]. Retrieved from  
+    <a href="http://www.keirsey.com" target="_blank">http://www.keirsey.com</a>
+  </li>
+  <li>Similar Minds. (2024). *Personality Test*. Retrieved from  
+    <a href="http://similarminds.com/" target="_blank">http://similarminds.com/</a>
+  </li>
+  <li>Stack Overflow. (2024). *Programming Community Forum*. Retrieved from  
+    <a href="https://stackoverflow.com" target="_blank">https://stackoverflow.com</a>
+  </li>
+</ul>
+
+<h2>Academic Papers & Articles</h2>
+<ul>
+  <li>Smith, J. (2020). The impact of automation on the modern workforce. *Journal of Computer Science, 35*(2), 45-60.</li>
+  <li>Doe, A., & Lee, B. (2022). Cybersecurity in online applications: A case study. *International Journal of Information Technology, 28*(4), 100-115.</li>
+</ul>
+
+<h2>Software & Tools Used</h2>
+<ul>
+  <li>VS Code (Version 1.75) - Code Editor</li>
+  <li>Git (Version 2.40) - Version Control</li>
+  <li>Adobe Premiere Pro (2023) - Video Editing Software</li>
+  <li>Audacity (Version 3.2) - Audio Editing Software</li>
+</ul>
+
+  </body>
+
+<script>
+  fetch('navbar.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('navbar').innerHTML = data;
+    });
+</script>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <div class="content">
+      <!-- Resume Section -->
+      <section id="resume">
+        <h1>Curriculum Vitae (Resume)</h1>
+        <div class="resume-container">
+          <h2>Jeremy Grant</h2>
+          <p>Passionate Computer Science Student | Aspiring Software Developer</p>
+          <h3>Contact Information</h3>
+          <ul>
+            <li>Email: <a href="mailto:Jeremy202202@gmail.com">Jeremy202202@gmail.com</a></li>
+            <li>Phone: 737-777-7519</li>
+            <li>Location: Jamaica</li>
+          </ul>
+          <h3>Education</h3>
+          <ul>
+            <li>
+              <strong>Bachelor of Science in Computer Science</strong> <br />
+              University of Technology, Jamaica <br />
+              Expected Graduation: 2025
+            </li>
+          </ul>
+          <h3>Skills</h3>
+          <ul>
+            <li>Programming: Python, C, HTML, CSS</li>
+            <li>Web Development: Responsive Design, Dynamic Content Integration</li>
+            <li>Problem Solving and Critical Thinking</li>
+          </ul>
+          <h3>Projects</h3>
+          <ul>
+            <li>
+              <strong>Appointment Booking App</strong> <br />
+              Developed a full-stack application to manage appointments for a hair salon.
+            </li>
+            <li>
+              <strong>Automated Social Media Content Poster</strong> <br />
+              Created a Python script to post content to YouTube, TikTok, and Instagram simultaneously.
+            </li>
+          </ul>
+          <h3>Future Goals</h3>
+          <ul>
+            <li>Work as a Software Developer at Google or Microsoft</li>
+            <li>Contribute to impactful open-source projects</li>
+            <li>Build innovative applications that solve real-world problems</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Vision and Mission Section -->
+      <section id="vision-mission">
+        <h2>Professional Vision and Mission</h2>
+        <div class="vision-mission-container">
+          <h3>Vision Statement</h3>
+          <p>
+            To become a leading software developer known for creating innovative
+            and impactful solutions that revolutionize industries and improve
+            lives globally.
+          </p>
+          <h3>Mission Statement</h3>
+          <p>
+            To continuously learn and apply cutting-edge technologies, foster
+            collaboration within diverse teams, and deliver exceptional software
+            solutions that exceed expectations and drive positive change.
+          </p>
+        </div>
+      </section>
+
+      <!-- Career Information Section -->
+      <section id="career">
+        <h2>Career Aspirations</h2>
+        <div class="career-container">
+          <h3>Career Goal: Software Developer</h3>
+          <h4>Skills and Qualifications</h4>
+          <ul>
+            <li>Proficiency in programming languages such as Python, Java, and JavaScript</li>
+            <li>Strong understanding of algorithms, data structures, and system design</li>
+            <li>Experience with cloud platforms (AWS, Azure, or Google Cloud)</li>
+            <li>Knowledge of DevOps practices and tools</li>
+            <li>Excellent communication and teamwork skills</li>
+          </ul>
+          <h4>Job Requirements</h4>
+          <ul>
+            <li>Bachelor’s degree in Computer Science or related field</li>
+            <li>2+ years of software development experience (internships included)</li>
+            <li>Portfolio of projects demonstrating technical skills</li>
+          </ul>
+          <h4>Future Plans</h4>
+          <p>
+            After graduating, I plan to join a tech company like Google or
+            Microsoft, where I can work on innovative projects, gain
+            experience, and eventually lead a team of developers to create
+            groundbreaking software.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

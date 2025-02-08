@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Storyboard</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="navbar"></div>
+    
+    <div class="content">
+      <h1>Website Storyboard</h1>
+      
+      <section id="wireframe">
+        <h2>Wireframe Design</h2>
+        <p>Below is the layout design for the website.</p>
+        <img src="/Assests/wireframe.jpg" alt="Wireframe Design" width="100%">
+      </section>
+      
+      <section id="page-list">
+        <h2>Website Pages & Their Purpose</h2>
+        <ul>
+          <li><strong>Home:</strong> Introduction and overview of the website.</li>
+          <li><strong>About Me:</strong> Information about Jeremy Grant and his background.</li>
+          <li><strong>Projects:</strong> Showcase of programming and video editing projects.</li>
+          <li><strong>Contact:</strong> Contact details and social media links.</li>
+        </ul>
+      </section>
+      
+      <section id="theme">
+        <h2>Theme</h2>
+        <p>The website will have a modern, tech-inspired theme with a color scheme of blue, white, and black. The design will be clean and minimalistic, with a focus on readability and user experience.</p>
+      </section>
+      
+      <section id="features">
+        <h2>Features</h2>
+        <ul>
+          <li>Image Gallery</li>
+          <li>Embedded Videos</li>
+          <li>Interactive Contact Form</li>
+          <li>Responsive Design</li>
+        </ul>
+      </section>
+      
+      <section id="hosting">
+        <h2>Hosting Link</h2>
+        <p>The website will be hosted on a free platform. The link will be provided upon completion.</p>
+      </section>
+    </div>
+    
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>
+
+
+

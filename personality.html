@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Personal Development</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div id="navbar"></div>
+
+    <div class="content">
+      <section id="introduction">
+        <h1>Personal Development</h1>
+        <p class="description">
+          I am a third-year Computer Science student at the University of Technology, Jamaica, currently pursuing a degree in Computer Science. 
+        </p>
+      </section>
+
+      <!-- Book Summary and Reflection -->
+      <section id="academic-reflection">
+        <h2>Academic Reflection</h2>
+      
+        <h3>a. Showcase how your strongest trait and emotion, hobby, etc. impact your school/academic life.</h3>
+        <p>
+          My strongest trait is perseverance, which has greatly impacted my academic journey. I consistently push through challenges, such as difficult assignments and programming tasks, by seeking additional resources or consulting with professors and peers. This trait allows me to excel even in subjects where I initially struggle, making sure I finish strong.
+        </p>
+        <h4>Application to My Life:</h4>
+        <p>
+          I will continue to utilize my perseverance in my academic life by pushing through any challenges in my courses, especially in programming, where I tend to encounter difficult tasks. By remaining determined, I will ensure my success in this field.
+        </p>
+      
+        <h3>b. Provide a favourite scene, personal motto or quote from your hero, mentor or a person you look up to the most.</h3>
+        <p>
+          My hero is Elon Musk. His achievements in the tech world, particularly with SpaceX and Tesla, have greatly inspired me. He has shown that perseverance and vision can lead to groundbreaking results. A quote from Musk that resonates with me is:
+          <em>"When something is important enough, you do it even if the odds are not in your favor."</em> This quote drives me to stay committed to my goals despite facing obstacles.
+        </p>
+        <h4>Application to My Life:</h4>
+        <p>
+          I will keep this quote in mind as I navigate through my academic journey. Even if faced with challenges, especially in difficult subjects like mathematics or coding, I will remind myself that persistence is key to achieving my goals.
+        </p>
+      
+        <h3>c. Using an online personality tool to assess yourself.</h3>
+        <h4>i. Take a screenshot of the results and embed it into the webpage.</h4>
+        <p>
+          <img src="/Assests/PersonalityResults.png" alt="Keirsey Results" id="personality-image">
+        </p>
+      
+        <h4>ii. Reflect briefly in writing whether you think that the test has validity in general and in your individual case in particular.</h4>
+        <p>
+          I believe that online personality tests, such as the one I took using the Keirsey tool, can offer valuable insights into one's traits and preferences. While the results may not capture every nuance of an individual, they provide a helpful framework for self-reflection. In my case, the results were quite accurate, especially regarding my logical thinking and problem-solving abilities, which are essential in my field of study. However, I also understand that personality is dynamic and can change over time.
+        </p>
+      
+      </section>
+      
+      <script>
+        fetch('navbar.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('navbar').innerHTML = data;
+          });
+      </script>
+      </body>
+      </html>
+      

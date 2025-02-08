@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2205728_IA2</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <div id="navbar"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <section class="intro">
+        <h1>Jeremy Grant's Web Portfolio</h1>
+
+        <figure class="profile">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Jeremy202202@gmail.com&su=Student%20ID%20%232205728" target="_blank">
+            <img src="/Assests/ProfilePic.jpg" alt="Profile Picture">
+          </a>
+          <figcaption>Click the image to email me.</figcaption>
+        </figure>
+        
+        <article>
+          <p class="description">
+            Hi, I’m Jeremy Grant, a passionate third-year Computer Science student at the University of Technology, Jamaica.
+          </p>
+        
+          <p>
+            I’ve curated this website to showcase different facets of my journey:
+          </p>
+        
+          <ul>
+            <li>
+              <strong>Professional Page:</strong> Highlighting my academic and career achievements, technical skills, and projects.
+            </li>
+            <li>
+              <strong>Personality Page:</strong> Offering a glimpse into my creative side, including my journey as a TikTok influencer with over 40k followers. I share insights into tech, sound engineering, and daily life.
+            </li>
+            <li>
+              <strong>Personal Development Page:</strong> Documenting my growth, goals, and the steps I’m taking to become a better version of myself.
+            </li>
+          </ul>
+        </article>
+        
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Jeremy Grant. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Loading Navbar -->
+    <script>
+      fetch('navbar.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('navbar').innerHTML = data;
+        });
+    </script>
+  </body>
+</html>

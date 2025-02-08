@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <div id="navbar"></div>
+
+    <!-- Main Content -->
+    <main>
+      <section class="intro">
+        <h1>Welcome to the Development Page</h1>
+        <p>
+          This page is dedicated to showcasing my development projects, ideas, and
+          progress as a Computer Science student. Here, you'll find insights into my work,
+          coding experiments, and more.
+        </p>
+      </section>
+
+      <section class="projects">
+        <h2>Recent Projects</h2>
+        <div class="project-list">
+          <article class="project">
+            <h3>Project 1: Personal Portfolio</h3>
+            <p>
+              A responsive website showcasing my skills, experience, and portfolio.
+              Built using HTML, CSS, and JavaScript.
+            </p>
+            <a href="portfolio.html" target="_blank">View Project</a>
+          </article>
+
+          <article class="project">
+            <h3>Project 2: Task Manager</h3>
+            <p>
+              A Python-based application for managing daily tasks, featuring a
+              user-friendly interface and data storage.
+            </p>
+            <a href="task-manager.html" target="_blank">View Project</a>
+          </article>
+
+          <article class="project">
+            <h3>Project 3: TikTok Trend Analyzer</h3>
+            <p>
+              A tool to analyze TikTok trends using APIs and machine learning
+              techniques, providing insights into popular content.
+            </p>
+            <a href="trend-analyzer.html" target="_blank">View Project</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          Have a question or want to collaborate? Feel free to reach out!
+        </p>
+        <a href="mailto:Jeremy202202@gmail.com">Email Me</a>
+      </section>
+    </main>
+  </body>
+
+  <script>
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar').innerHTML = data;
+      });
+  </script>
+</html>
